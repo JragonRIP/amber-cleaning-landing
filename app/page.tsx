@@ -79,6 +79,10 @@ export default function Home() {
           Your website preview and next steps
         </h2>
 
+        <p className="mb-2 shrink-0 px-1 text-center font-serif text-lg leading-tight text-zinc-100 sm:mb-3 sm:text-xl md:text-2xl">
+          Amber&apos;s Cleaning Service
+        </p>
+
         <a
           href={CLIENT_WEBSITE_URL}
           target="_blank"
