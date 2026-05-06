@@ -57,15 +57,15 @@ export default function Home() {
         />
       </div>
 
-      {/* Masthead — compact on phones, comfortable on desktop */}
-      <header className="shrink-0 px-3 pb-1.5 pt-[max(0.5rem,env(safe-area-inset-top))] text-center sm:px-6 sm:pb-2 md:pb-3">
-        <p className="text-[10px] font-medium uppercase tracking-[0.28em] text-amber-500/90 sm:text-xs md:text-sm">
+      {/* Masthead — larger type on small screens for readability */}
+      <header className="shrink-0 px-4 pb-2 pt-[max(0.75rem,env(safe-area-inset-top))] text-center sm:px-6 sm:pb-2 md:pb-3">
+        <p className="text-xs font-medium uppercase tracking-[0.26em] text-amber-500/90 sm:text-sm md:text-base">
           Aurum Web Design
         </p>
-        <h1 className="mx-auto max-w-2xl font-serif text-sm font-medium leading-snug tracking-tight text-zinc-100 sm:text-base md:text-lg lg:text-xl">
+        <h1 className="mx-auto max-w-2xl font-serif text-base font-medium leading-snug tracking-tight text-zinc-100 sm:text-lg md:text-xl lg:text-2xl">
           Thanks for working with Aurum Web Design.
         </h1>
-        <p className="mt-1 max-w-xl mx-auto text-xs leading-snug text-zinc-400 sm:text-sm md:text-base md:mt-1.5">
+        <p className="mx-auto mt-2 max-w-xl text-sm leading-snug text-zinc-400 sm:mt-1.5 sm:text-base md:text-lg">
           Your digital presence is ready for the world.
         </p>
       </header>
@@ -95,38 +95,38 @@ export default function Home() {
               className="object-contain object-top transition duration-300 ease-out group-hover:brightness-[1.05]"
             />
           </div>
-          <div className="shrink-0 pt-1.5 text-center md:pt-2">
-            <span className="block text-[10px] text-zinc-400 transition group-hover:text-amber-400/95 sm:text-xs md:text-sm">
+          <div className="shrink-0 px-1 pt-2 text-center sm:pt-1.5 md:pt-2">
+            <span className="block text-sm leading-snug text-zinc-400 transition group-hover:text-amber-400/95 sm:text-base md:text-lg">
               Tap or click to open your site · new tab
             </span>
-            <p className="mt-1 font-medium tabular-nums text-amber-300/90 text-[11px] sm:text-xs md:text-sm">
+            <p className="mt-1.5 font-medium tabular-nums text-base text-amber-300/90 sm:mt-1 sm:text-lg md:text-xl">
               $400/month
             </p>
           </div>
         </a>
 
-        <div className="mx-auto mt-3 grid w-full min-w-0 max-w-lg grid-cols-1 gap-5 sm:max-w-2xl sm:grid-cols-2 sm:gap-x-10 md:max-w-3xl md:mt-4">
-          <div className="flex min-w-0 flex-col items-center gap-2 text-center sm:items-stretch sm:text-left">
-            <p className="font-serif text-xs text-zinc-100 sm:text-sm md:text-base">
+        <div className="mx-auto mt-4 grid w-full min-w-0 max-w-lg grid-cols-1 gap-6 px-1 sm:mt-3 sm:max-w-2xl sm:grid-cols-2 sm:gap-x-10 sm:gap-y-5 sm:px-0 md:max-w-3xl md:mt-4">
+          <div className="flex min-w-0 flex-col items-center gap-3 text-center sm:items-stretch sm:gap-2 sm:text-left">
+            <p className="font-serif text-lg text-zinc-100 md:text-xl">
               Love it?
             </p>
             <a
               href={STRIPE_PAY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-9 w-full items-center justify-center rounded-full bg-gradient-to-r from-zinc-200 via-amber-200 to-amber-400 px-3 text-xs font-semibold tracking-wide text-zinc-950 shadow-[0_0_28px_-4px_rgba(212,175,55,0.5)] transition hover:brightness-105 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 sm:h-10 sm:text-sm md:h-11"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-zinc-200 via-amber-200 to-amber-400 px-4 text-base font-semibold tracking-wide text-zinc-950 shadow-[0_0_28px_-4px_rgba(212,175,55,0.5)] transition hover:brightness-105 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 sm:min-h-11 md:min-h-12"
             >
               Pay Now
             </a>
           </div>
-          <div className="flex min-w-0 flex-col items-center gap-2 text-center sm:items-stretch sm:text-left">
-            <p className="font-serif text-xs text-zinc-100 sm:text-sm md:text-base">
+          <div className="flex min-w-0 flex-col items-center gap-3 text-center sm:items-stretch sm:gap-2 sm:text-left">
+            <p className="font-serif text-lg text-zinc-100 md:text-xl">
               Need tweaks?
             </p>
             <button
               type="button"
               onClick={() => setRevisionOpen(true)}
-              className="inline-flex h-9 w-full items-center justify-center rounded-full bg-zinc-900/35 px-3 text-xs font-semibold tracking-wide text-zinc-100 ring-1 ring-zinc-600/80 transition hover:bg-zinc-800/50 hover:ring-amber-500/35 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/70 sm:h-10 sm:text-sm md:h-11"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-zinc-900/35 px-4 text-base font-semibold tracking-wide text-zinc-100 ring-1 ring-zinc-600/80 transition hover:bg-zinc-800/50 hover:ring-amber-500/35 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/70 sm:min-h-11 md:min-h-12"
             >
               Submit Changes
             </button>
