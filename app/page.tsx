@@ -62,7 +62,7 @@ export default function Home() {
         <p className="text-xs font-medium uppercase tracking-[0.26em] text-amber-500/90 sm:text-sm md:text-base">
           Aurum Web Design
         </p>
-        <h1 className="mx-auto max-w-2xl font-serif text-base font-medium leading-snug tracking-tight text-zinc-100 sm:text-lg md:text-xl lg:text-2xl">
+        <h1 className="mx-auto max-w-2xl font-serif text-xl font-medium leading-snug tracking-tight text-zinc-100 md:text-2xl">
           Thanks for working with Aurum Web Design.
         </h1>
         <p className="mx-auto mt-2 max-w-xl text-sm leading-snug text-zinc-400 sm:mt-1.5 sm:text-base md:text-lg">
@@ -72,7 +72,7 @@ export default function Home() {
 
       {/* Preview + actions — one continuous block */}
       <section
-        className="mx-auto flex w-full max-w-5xl flex-1 min-h-0 flex-col px-2 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-1 sm:px-3 md:px-4"
+        className="mx-auto flex w-full max-w-5xl flex-1 min-h-0 flex-col px-2 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-6 sm:px-3 sm:pt-1 md:px-4"
         aria-labelledby="delivery-heading"
       >
         <h2 id="delivery-heading" className="sr-only">
